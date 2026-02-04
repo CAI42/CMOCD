@@ -96,7 +96,9 @@ For questions about the dataset or code, please contact:
 - Luyang Cai: cailuyang21@mails.ucas.ac.cn
 - He Sun (corresponding author): sunhe@aircas.ac.cn
 
-Acknowledgements
+# Acknowledgements
 This work was supported by the National Natural Science Foundation of China (Grant 62571514, 62301534, 42325104) and the Science and Disruptive Technology Program, AIRCAS (Grant 2025-AIRCAS-SDPT-17). We thank the team for data collection and annotation support.
+
+We acknowledge and thank the authors of the YOLOv11-RGBT project (https://github.com/wandahangFY/YOLOv11-RGBT) for their valuable open-source work, which served as an important reference for the development of this project.
 
 
