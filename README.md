@@ -16,6 +16,7 @@ This repository provides the CVOCD dataset (first cross-view visible-thermal obj
 
 # 📊 Dataset (CVOCD)
 **Dataset Details**
+
   -**Image Pairs**: 2723 (visible-thermal bitemporal pairs)
   
   -**Image Resolution**: Thermal: 1280×1024; Visible: 4000×3000
