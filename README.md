@@ -14,16 +14,25 @@ Core Contributions
 
   - VTFF Module: Decoupled channel-spatial attention fusion for multimodal complementarity.
 
-📊 Dataset (CVOCD)
+# 📊 Dataset (CVOCD)
 Dataset Details
   -Image Pairs: 2723 (visible-thermal bitemporal pairs)
+  
   -Image Resolution: Thermal: 1280×1024; Visible: 4000×3000
+  
   -Annotated Objects: 155,277 vehicles (91,363 unchanged; 63,914 changed)
+  
   -Split Ratio: Train: 1906 pairs; Val: 409 pairs; Test: 408 pairs
+  
   -Illumination Scenarios: Nearly no difference (1480 pairs), Slight difference (708 pairs), Significant difference (535 pairs)
+  
   -Collection Sites: Changchun, Luoyang, Fuyang (China) – covers urban/rural traffic scenes
+  
 Dataset Links:[Quark Netdisk] [Baidu Netdisk]
+
 Dataset Structure:
+
+ <code>
   CVOCD/
     ├── train/
     │   ├── infrared/          # Thermal images (temporal 1)
@@ -42,8 +51,9 @@ Dataset Structure:
     │   │   │   └── ...
     ├── val/                  # Same structure as train
     └── test/                 # Same structure as train
+</code>
 
-🚀 Installation
+# 🚀 Installation
 Prerequisites
 - Python 3.8+
 - PyTorch 1.18+
@@ -55,30 +65,31 @@ Clone the Repository
   <code>git clone https://github.com/CAI42/CMOCD.git</code>
   <code>cd CMOCD</code>
 
-📝 Training
+# 📝 Training
   <code>python train.py</code>
 
-📝 Evaluation
+# 📝 Evaluation
   <code>python detect-6C.py</code>
 
-📚 Citation
+# 📚 Citation
   If you use the CVOCD dataset or CMOCD framework in your research, please cite our paper:
+  
    <code> @article{cai2026cross,
-      title={Cross-View Visible-Thermal Object-Level Change Detection for Small Vehicles},
-      author={Cai, Luyang and Sun, He and Yang, Hao and Zhao, Zhuxin and Ni, Li and Gao, Lianru},
-      journal={IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing},
-      volume={19},
-      pages={4443--4456},
-      year={2026},
-      publisher={IEEE},
-      doi={10.1109/JSTARS.2026.3653040}
-    }</code>
+            title={Cross-View Visible-Thermal Object-Level Change Detection for Small Vehicles},
+            author={Cai, Luyang and Sun, He and Yang, Hao and Zhao, Zhuxin and Ni, Li and Gao, Lianru},
+            journal={IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing},
+            volume={19},
+            pages={4443--4456},
+            year={2026},
+            publisher={IEEE},
+            doi={10.1109/JSTARS.2026.3653040}
+            }</code>
 
 
-📋 License
+# 📋 License
 - Dataset: The CVOCD dataset is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. Commercial use is prohibited.
 
-🤝 Contact
+# 🤝 Contact
 For questions about the dataset or code, please contact:
 - Luyang Cai: cailuyang21@mails.ucas.ac.cn
 - He Sun (corresponding author): sunhe@aircas.ac.cn
