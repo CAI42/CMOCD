@@ -3,7 +3,7 @@
 Official implementation of the paper "Cross-View Visible-Thermal Object-Level Change Detection for Small Vehicles" (IEEE JSTARS 2026).
 This repository provides the CVOCD dataset (first cross-view visible-thermal object-level change detection dataset for small vehicles) and the CMOCD framework (cross-view multimodal object-level change detection method) based on YOLOv11.
 
-🔍 Overview
+# 🔍 Overview
 Core Contributions
 
 1. CVOCD Dataset: First public dataset for cross-view visible-thermal object-level change detection, focusing on small vehicles (cars, buses, trucks) with 2723 image pairs and 155k+ annotated objects.
@@ -52,27 +52,27 @@ Prerequisites
   pip install -r requirements.txt
 
 Clone the Repository
-  git clone https://github.com/CAI42/CMOCD.git
-  cd CMOCD
+  <code>git clone https://github.com/CAI42/CMOCD.git</code>
+  <code>cd CMOCD</code>
 
 📝 Training
-python train.py
+  <code>python train.py</code>
 
 📝 Evaluation
-python detect-6C.py
+  <code>python detect-6C.py</code>
 
 📚 Citation
-If you use the CVOCD dataset or CMOCD framework in your research, please cite our paper:
-@article{cai2026cross,
-  title={Cross-View Visible-Thermal Object-Level Change Detection for Small Vehicles},
-  author={Cai, Luyang and Sun, He and Yang, Hao and Zhao, Zhuxin and Ni, Li and Gao, Lianru},
-  journal={IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing},
-  volume={19},
-  pages={4443--4456},
-  year={2026},
-  publisher={IEEE},
-  doi={10.1109/JSTARS.2026.3653040}
-}
+  If you use the CVOCD dataset or CMOCD framework in your research, please cite our paper:
+   <code> @article{cai2026cross,
+      title={Cross-View Visible-Thermal Object-Level Change Detection for Small Vehicles},
+      author={Cai, Luyang and Sun, He and Yang, Hao and Zhao, Zhuxin and Ni, Li and Gao, Lianru},
+      journal={IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing},
+      volume={19},
+      pages={4443--4456},
+      year={2026},
+      publisher={IEEE},
+      doi={10.1109/JSTARS.2026.3653040}
+    }</code>
 
 
 📋 License
