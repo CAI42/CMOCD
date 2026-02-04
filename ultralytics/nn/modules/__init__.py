@@ -1,0 +1,194 @@
+# Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+"""
+Ultralytics modules.
+
+Example:
+    Visualize a module with Netron.
+    ```python
+    from ultralytics.nn.modules import *
+    import torch
+    import os
+
+    x = torch.ones(1, 128, 40, 40)
+    m = Conv(128, 128)
+    f = f"{m._get_name()}.onnx"
+    torch.onnx.export(m, x, f)
+    os.system(f"onnxslim {f} {f} && open {f}")  # pip install onnxslim
+    ```
+"""
+
+from .block import (
+    C1,
+    C2,
+    C2PSA,
+    C3,
+    C3TR,
+    CIB,
+    DFL,
+    ELAN1,ELAN_t,ELAN_H,ELAN,SPPCSPCSIM,SPPCSPC,MP_2,MP_1,YOLOv4_BottleneckCSP,YOLOv4_Bottleneck,
+    PSA,CrossAttentionShared, CrossMLCA , TensorSelector,CrossMLCAv2,DeepDiverseBranchBlock,RecursionDiverseBranchBlock,
+    C3k2_DeepDBB,C3k2_DBB,C3k2_WDBB,C2f_DeepDBB,C2f_WDBB,C2f_DBB,C3k_RDBB,C2f_RDBB,C3k2_RDBB,A2C2f,
+    ConvNormLayer, BasicBlock, BottleNeck,Blocks,
+    GPT,Add2,Add,CrossTransformerFusion,
+    MANet, HyperComputeModule, MANet_FasterBlock, MANet_FasterCGLU, MANet_Star,
+    CrossC2f ,  CrossC3k2,
+    CBH , ES_Bottleneck, DWConvblock,ADD,
+    SPP,
+    SPPELAN,
+    SPPF,
+    AConv,
+    ADown,
+    Attention,
+    BNContrastiveHead,
+    Bottleneck,
+    BottleneckCSP,
+    C2f,
+    C2fAttn,
+    C2fCIB,
+    C2fPSA,
+    C3Ghost,
+    C3k2,
+    C3x,
+    CBFuse,
+    CBLinear,
+    ContrastiveHead,
+    GhostBottleneck,
+    HGBlock,
+    HGStem,
+    ImagePoolingAttn,
+    Proto,
+    RepC3,
+    RepNCSPELAN4,
+    RepVGGDW,
+    ResNetLayer,
+    SCDown,
+    TorchVision,
+)
+from .conv import (
+    CBAM,
+    ChannelAttention,
+    Concat,
+    Conv,
+    Conv2,
+    ConvTranspose,
+    DWConv,
+    DWConvTranspose2d,
+    Focus,
+    GhostConv,
+    Index,
+    LightConv,
+    RepConv,
+    SpatialAttention,Silence,SilenceChannel,ChannelToNumber,NumberToChannel,
+
+)
+
+from .rep_block import  DiverseBranchBlock, WideDiverseBranchBlock, DeepDiverseBranchBlock,FeaturePyramidAggregationAttention,SilenceLayer
+
+from .head import OBB, Classify, Detect, Pose, RTDETRDecoder, Segment, WorldDetect, v10Detect, DetectDeepDBB, DetectWDBB,DetectV8,DetectAux,Detect_LSCD, Segment_LSCD, Pose_LSCD, OBB_LSCD
+from .transformer import (
+    AIFI,
+    MLP,
+    DeformableTransformerDecoder,
+    DeformableTransformerDecoderLayer,
+    LayerNorm2d,
+    MLPBlock,
+    MSDeformAttn,
+    TransformerBlock,
+    TransformerEncoderLayer,
+    TransformerLayer,
+)
+from .GPT import GPT1
+from .fuse import Fuse1, Fuse2, Fuse3, Fuse4
+from .E_LoFTR_coarse import EfficientCoarseFeatureTransform,CoarseMatching,AdaptiveCoarseFeatureTransform
+from .coarseT import VTFCF
+from .align_fuse import VTFFA, VTFFA1, VTFFA2,VTFF_gate,PerspectiveSTN_DDF,PerspectiveSTN_gateDDF,STN_DDF,STN_gateDDF,CFFA_STN,CFFA_PerspectiveSTN
+
+__all__ = (
+    "Conv",
+    "Conv2",
+    "LightConv",
+    "RepConv",
+    "DWConv",
+    "DWConvTranspose2d",
+    "ConvTranspose",
+    "Focus",
+    "GhostConv",
+    "ChannelAttention",
+    "SpatialAttention",
+    "CBAM",
+    "Concat",
+    "TransformerLayer",
+    "TransformerBlock",
+    "MLPBlock",
+    "LayerNorm2d",
+    "DFL",
+    "HGBlock",
+    "HGStem",
+    "SPP",
+    "SPPF",
+    "C1",
+    "C2",
+    "C3",
+    "C2f",
+    "C3k2",
+    "SCDown",
+    "C2fPSA",
+    "C2PSA",
+    "C2fAttn",
+    "C3x",
+    "C3TR",
+    "C3Ghost",
+    "GhostBottleneck",
+    "Bottleneck",
+    "BottleneckCSP",
+    "Proto",
+    "Detect",'DetectAux',
+    "Segment",
+    "Pose",
+    "Classify",
+    "TransformerEncoderLayer",
+    "RepC3",
+    "RTDETRDecoder",
+    "AIFI",
+    "DeformableTransformerDecoder",
+    "DeformableTransformerDecoderLayer",
+    "MSDeformAttn",
+    "MLP",
+    "ResNetLayer",
+    "OBB",
+    "WorldDetect",
+    "v10Detect",
+    "ImagePoolingAttn",
+    "ContrastiveHead",
+    "BNContrastiveHead",
+    "RepNCSPELAN4",
+    "ADown",
+    "SPPELAN",
+    "CBFuse",
+    "CBLinear",
+    "AConv",
+    "ELAN1","ELAN","ELAN_H",'MP_1','MP_2','ELAN_t','SPPCSPCSIM','SPPCSPC',
+    "RepVGGDW",
+    "CIB",
+    "C2fCIB",
+    "Attention",
+    "PSA",
+    "TorchVision",
+    "Index", 'Silence','SilenceChannel','ChannelToNumber','NumberToChannel',
+    'DiverseBranchBlock', 'WideDiverseBranchBlock', 'DeepDiverseBranchBlock','FeaturePyramidAggregationAttention','SilenceLayer',
+    "CrossAttentionShared","CrossMLCA","TensorSelector","CrossMLCAv2",'YOLOv4_BottleneckCSP','YOLOv4_Bottleneck',
+    'DiverseBranchBlock', 'WideDiverseBranchBlock', 'DeepDiverseBranchBlock','FeaturePyramidAggregationAttention',
+    "C3k2_DeepDBB","C3k2_DBB","C3k2_WDBB",'C2f_DeepDBB','C2f_WDBB','C2f_DBB','C3k_RDBB','C2f_RDBB','C3k2_RDBB','A2C2f',
+    'ConvNormLayer', 'BasicBlock', 'BottleNeck', 'Blocks',
+    "CrossC2f", "CrossC3k2",
+    "CBH","ES_Bottleneck","DWConvblock","ADD",
+    'MANet', 'HyperComputeModule', 'MANet_FasterBlock', 'MANet_FasterCGLU', 'MANet_Star',
+
+    "GPT","Add2","Add","CrossTransformerFusion",
+    "GPT1","Fuse1","Fuse2","Fuse3","Fuse4",
+    "EfficientCoarseFeatureTransform","CoarseMatching","AdaptiveCoarseFeatureTransform",
+    "SwinT"
+    "VTFCF",
+    "VTFFA", "VTFFA1", "VTFFA2",
+    "VTFF_gate", "PerspectiveSTN_DDF", "PerspectiveSTN_gateDDF", "STN_DDF", "STN_gateDDF", "CFFA_STN", "CFFA_PerspectiveSTN"
+)
