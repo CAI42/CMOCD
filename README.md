@@ -1,6 +1,6 @@
 # CMOCD: Cross-View Multimodal Object-Level Change Detection for Small Vehicles
 
-Official implementation of the paper "Cross-View Visible-Thermal Object-Level Change Detection for Small Vehicles" (IEEE JSTARS 2026).
+Official implementation of the paper "Cross-View Visible-Thermal Object-Level Change Detection for Small Vehicles" (IEEE JSTARS 2026). <https://ieeexplore.ieee.org/document/11345945>
 This repository provides the CVOCD dataset (first cross-view visible-thermal object-level change detection dataset for small vehicles) and the CMOCD framework (cross-view multimodal object-level change detection method) based on YOLOv11.
 
 # 🔍 Overview
