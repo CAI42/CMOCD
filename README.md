@@ -31,7 +31,6 @@ Dataset Details
 Dataset Links:[Quark Netdisk] [Baidu Netdisk]
 
 Dataset Structure:
-
  <code>
   CVOCD/
     ├── train/
