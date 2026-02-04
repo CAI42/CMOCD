@@ -4,7 +4,7 @@ Official implementation of the paper "Cross-View Visible-Thermal Object-Level Ch
 This repository provides the CVOCD dataset (first cross-view visible-thermal object-level change detection dataset for small vehicles) and the CMOCD framework (cross-view multimodal object-level change detection method) based on YOLOv11.
 
 # 🔍 Overview
-Core Contributions
+**Core Contributions**
 
 1. CVOCD Dataset: First public dataset for cross-view visible-thermal object-level change detection, focusing on small vehicles (cars, buses, trucks) with 2723 image pairs and 155k+ annotated objects.
 
@@ -15,22 +15,22 @@ Core Contributions
   - VTFF Module: Decoupled channel-spatial attention fusion for multimodal complementarity.
 
 # 📊 Dataset (CVOCD)
-Dataset Details
-  -Image Pairs: 2723 (visible-thermal bitemporal pairs)
+**Dataset Details**
+  -**Image Pairs**: 2723 (visible-thermal bitemporal pairs)
   
-  -Image Resolution: Thermal: 1280×1024; Visible: 4000×3000
+  -**Image Resolution**: Thermal: 1280×1024; Visible: 4000×3000
   
-  -Annotated Objects: 155,277 vehicles (91,363 unchanged; 63,914 changed)
+  -**Annotated Objects**: 155,277 vehicles (91,363 unchanged; 63,914 changed)
   
-  -Split Ratio: Train: 1906 pairs; Val: 409 pairs; Test: 408 pairs
+  -**Split Ratio**: Train: 1906 pairs; Val: 409 pairs; Test: 408 pairs
   
-  -Illumination Scenarios: Nearly no difference (1480 pairs), Slight difference (708 pairs), Significant difference (535 pairs)
+  -**Illumination Scenarios**: Nearly no difference (1480 pairs), Slight difference (708 pairs), Significant difference (535 pairs)
   
-  -Collection Sites: Changchun, Luoyang, Fuyang (China) – covers urban/rural traffic scenes
+  -**Collection Sites**: Changchun, Luoyang, Fuyang (China) – covers urban/rural traffic scenes
   
-Dataset Links:[Quark Netdisk] [Baidu Netdisk]
+**Dataset Links**:[Quark Netdisk] [Baidu Netdisk]
 
-Dataset Structure:
+**Dataset Structure**:
  <code>
   CVOCD/
     ├── train/
