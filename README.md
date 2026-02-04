@@ -29,7 +29,7 @@ This repository provides the CVOCD dataset (first cross-view visible-thermal obj
   
   -**Collection Sites**: Changchun, Luoyang, Fuyang (China) – covers urban/rural traffic scenes
   
-**Dataset Links**:[Quark Netdisk] [Baidu Netdisk]
+**Dataset Links**:*[Quark Netdisk](https://pan.quark.cn/s/92a17b3f166d)* 
 
 **Dataset Structure**:
  <code>
@@ -67,7 +67,7 @@ Clone the Repository
   <code>cd CMOCD</code>
 
 # 📝 Training
-  <code>python train.py</code>
+  <code>python train_CMOCD.py</code>
 
 # 📝 Evaluation
   <code>python detect-6C.py</code>
