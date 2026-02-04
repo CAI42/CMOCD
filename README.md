@@ -62,6 +62,7 @@ Prerequisites
 
 Clone the Repository
   <code>git clone https://github.com/CAI42/CMOCD.git</code>
+  
   <code>cd CMOCD</code>
 
 # 📝 Training
@@ -73,16 +74,17 @@ Clone the Repository
 # 📚 Citation
   If you use the CVOCD dataset or CMOCD framework in your research, please cite our paper:
   
-   <code> @article{cai2026cross,
-            title={Cross-View Visible-Thermal Object-Level Change Detection for Small Vehicles},
-            author={Cai, Luyang and Sun, He and Yang, Hao and Zhao, Zhuxin and Ni, Li and Gao, Lianru},
-            journal={IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing},
-            volume={19},
-            pages={4443--4456},
-            year={2026},
-            publisher={IEEE},
-            doi={10.1109/JSTARS.2026.3653040}
-            }</code>
+   <code> 
+   @article{cai2026cross,
+    title={Cross-View Visible-Thermal Object-Level Change Detection for Small Vehicles},
+    author={Cai, Luyang and Sun, He and Yang, Hao and Zhao, Zhuxin and Ni, Li and Gao, Lianru},
+    journal={IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing},
+    volume={19},
+    pages={4443--4456},
+    year={2026},
+    publisher={IEEE},
+    doi={10.1109/JSTARS.2026.3653040}
+  }</code>
 
 
 # 📋 License
