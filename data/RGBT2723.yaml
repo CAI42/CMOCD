@@ -1,0 +1,13 @@
+# train and val data as 1) directory: path/images/
+train: /root/autodl-tmp/UAVCDdataset/train/visible/images  #  3812 image pairs
+val:  /root/autodl-tmp/UAVCDdataset/val/visible/images #  818 image pairs
+test:  /root/autodl-tmp/UAVCDdataset/test/visible/images #  816 image pairs
+
+# number of classes
+nc: 2
+
+# class names
+names: [ 'unchanged','changed']
+cls : [ 0:'unchanged',1:'changed']
+
+
